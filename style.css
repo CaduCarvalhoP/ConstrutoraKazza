@@ -1,0 +1,105 @@
+:root {
+  --vermelho: #ee3542;
+  --azul: #20214f;
+  --azul-opaco: #7172c78c;
+  --branco: #ffffff;
+}
+/* header */
+header {
+  background: linear-gradient(#ffffff, #f0f0f000);
+}
+.nav-link {
+  color: var(--azul) !important;
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  opacity: 0;
+  transition: all 0.2s;
+  height: 2px;
+  width: 100%;
+  background-color: var(--vermelho);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+/* kazza */
+.kazza {
+  justify-content: center;
+}
+.kazza .container-foto {
+  display: flex;
+  justify-content: center;
+}
+.img-kazza {
+  width: 300px;
+  height: 200px;
+}
+
+/* Estilo padrão do botão (Mostrar mais) */
+.show-more {
+  color: var(--vermelho) !important;
+  border: 2px solid var(--vermelho) !important;
+}
+
+.show-more:hover {
+  background-color: var(--vermelho) !important;
+  color: var(--branco) !important; /* Cor do texto branca */
+}
+
+/* Estilo do botão quando está no estado "Mostrar menos" */
+.show-less {
+  color: var(--azul) !important;
+  border: 2px solid var(--azul) !important;
+}
+.show-less:hover {
+  background-color: var(--azul) !important; /* Cor de fundo azul */
+  color: var(--branco) !important; /* Cor do texto branca */
+}
+
+/* fale conosco */
+.fale-conosco {
+  justify-content: center;
+  justify-content: space-around;
+}
+.form-control {
+  border: 1px solid var(--azul) !important;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem var(--azul-opaco) !important;
+}
+.btn-outline-danger {
+  color: var(--vermelho) !important;
+  border: 2px solid var(--vermelho) !important;
+}
+.btn-outline-danger:hover {
+  background-color: var(--vermelho) !important;
+  color: var(--branco) !important; /* Cor do texto branca */
+}
+.iframe-local {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  background-color: var(--azul);
+}
+.footer .footer-text {
+  color: var(--branco);
+}
+.copy-area {
+  background-color: var(--azul);
+}
+
+.copy-area .container {
+  padding: 10px 0;
+  text-align: center;
+}
+.copy-area .container p {
+  margin-bottom: 0;
+  color: var(--branco);
+}

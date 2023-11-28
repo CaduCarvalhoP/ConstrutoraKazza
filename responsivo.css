@@ -1,0 +1,56 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-foto .img-kazza {
+    width: 400px;
+    height: 300px;
+  }
+
+  .iframe-local iframe {
+    width: 600px;
+    height: 450px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1244px) {
+  .container-foto .img-kazza {
+    width: 500px;
+    height: 400px;
+  }
+
+  .iframe-local iframe {
+    width: 600px;
+    height: 450px;
+  }
+}
+@media (min-width: 1245px) {
+  .fale-conosco {
+    display: grid;
+    grid-template-areas: "form infos";
+    grid-template-columns: 1fr 1fr;
+  }
+  .form {
+    grid-area: form;
+  }
+  .infos {
+    grid-area: infos;
+  }
+
+  .iframe-local iframe {
+    width: 550px;
+    height: 400px;
+  }
+
+  .container-foto {
+    grid-area: foto;
+  }
+  .container-foto .img-kazza {
+    width: 766px;
+    height: 513px;
+  }
+  .container-texto {
+    grid-area: texto;
+  }
+  .kazza {
+    display: grid;
+    grid-template-areas: "foto texto";
+    grid-template-columns: 1fr 1fr;
+  }
+}
